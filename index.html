@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main_container">
+        <div class="header">
+            <h4 class="heading">SORTING VISUALIZER</h4>
+        </div>
+        <div class="section">
+            <div class="bars_container">
+            
+            </div>
+
+            <div class="controls">
+
+                <div class="algorithm_selection">
+                    <h4 class="algorithm">ALGORITHM</h4>
+                    <select id="algo">
+                        <option value="bubble">Bubble Sort</option>
+                        <option value="insertion">Insertion Sort</option>
+                        <option value="selection">Selection Sort</option>
+                        <option value="merge">Merge Sort</option>
+                    </select>
+                </div>
+
+                <div class="slider">
+                    <h4 id="size">SIZE</h3>
+                    <div class="size">
+                        <input id="size_slider" class="range" type="range" min="10" max="60" step="5px" value="30" />
+                    </div>
+                    <h4 id="speed">SPEED</h4>
+                    <div class="speed">
+                        <input id="speed_slider" class="range" type="range" min="10" max="310" step="50" value="150"/>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button id="random_array">New array</button>
+                    <button id="sort">Sort</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
